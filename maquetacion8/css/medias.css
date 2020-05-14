@@ -1,0 +1,274 @@
+@media only screen and (min-width: 1600px){
+    .ir-arriba{
+        padding: 6px;
+        border-radius: 6px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .ir-arriba i{
+        font-size: 62px;
+    }
+    
+}
+
+@media only screen and (max-width: 1199px){
+    .margenArriba-30{
+        margin-top: 30px;
+    }
+
+    .site-main > .services-area .services{
+        width: 13rem !important;
+    }
+
+    .test-popup-link img{
+        width: 95%;
+    }
+
+    .site-main .subscribe-us-area{
+        margin-top: -10px !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe{
+        padding: 4rem 0 !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 83%;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    /* .header_area .main-menu .navbar{ 
+         padding: 0 !important; 
+     } */
+
+    .header_area .main-menu .navbar .navbar-brand{
+        padding:0  1rem 0 0rem !important;
+    }
+
+    .footer-img{
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .margenArriba-50{
+        margin-top: 50px;
+    }
+
+    .site-main .brand-area{
+        padding: 0rem 5rem !important;
+    }
+
+    .site-main .brand-area .first-row .col-lg-4 > .single-brand{
+        width: 75% !important;
+        height: 150px !important;
+    }
+
+    .site-main > .services-area .services{
+        width: 20rem !important;
+        height: 80%;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 110%;
+    }
+
+    .site-main .subscribe-us-area .subscribe .subscribe-title h4{
+        font-size: 25px !important;
+    }
+
+    .esconder4{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 765px){
+    .site-main > .services-area .services{
+        width: 100% !important;
+        height: 78%;
+    }
+    
+    .contCenter{
+        justify-content: unset !important;
+        margin-left: 60px;
+    }
+    
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 166% !important;
+    }
+    
+    .footer-img{
+        height: 85px !important;
+        margin-top: 155px !important;
+    }
+}
+
+@media only screen and (max-width: 715px){
+    .footer-img{
+        height: 65px !important;
+        margin-top: 175px !important;
+    }
+
+    .copyrights{
+        position: absolute;
+        margin-top: 70px !important;
+    }
+
+    .esconder{
+        display: none;
+    }
+
+    .site-main .about-area{
+        padding: 6rem 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .footer-img{
+        width: 103vw !important;
+    }
+
+    .dark .header_area {
+        width: 103%;
+    }
+
+    .header_area {
+        width: 103%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -315px !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 180% !important;
+    }
+
+    .pdr{
+        margin-left: -55px;
+        padding-right: 3px !important;
+    }
+
+    .header_area .main-menu .navbar {
+        padding: 33px 0rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 486px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -300px !important;
+    }
+
+    .site-main .brand-area .expirience-area .years-area{
+        background: unset !important;
+        padding-left: 20px !important; 
+    }
+
+    .site-main .about-area .about-title h2 > span{
+        font-size: 35px !important;
+    }
+
+    .site-main .brand-area .expirience-area .call-area{
+        padding-left: 0 !important;
+    }
+
+    .site-main .brand-area{
+        padding: 0rem 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 180% !important;
+    }
+
+    .contCenter{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -310px !important;
+    }
+}
+
+@media only screen and (max-width: 434px){
+    .contCenter{
+        margin-left: 10px;
+    }
+
+    .site-main .side-banner .site-title h1{
+        font-size: 2.9rem !important;
+    }
+
+    .site-main .brand-area{
+        padding: 0rem 0rem !important;
+    }
+
+    .site-main .about-area{
+        padding: 6rem 0rem !important;
+    }
+
+    .site-main .services-area{
+        padding: 7rem 0.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 350px !important;
+    }
+
+    .textMessage{
+        width: 350px !important;
+    }
+    
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -325px !important;
+    }
+
+    .esconder3{
+        display: none;
+   }
+}
+
+@media only screen and (max-width: 403px){
+    .esconder2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 192% !important;
+    }
+
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -335px !important;
+        width: 340px !important;
+        height: 340px !important;
+    }
+}
+
+
+@media only screen and (max-width: 365px){
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 340px !important;
+    }
+
+    .textMessage{
+        width: 340px !important;
+    }
+}
+
+
+
+
+
+
