@@ -21,6 +21,11 @@ body{
     transition: 0.7s all;
     background-color: #F1F1F1;
     overflow-x: hidden;
+
+    overscroll-behavior-y: contain;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 :root{
