@@ -1,6 +1,6 @@
 importScripts('js/sw.utils.js');
 
-const cacheEstatico = 'static-v1',
+const cacheEstatico = 'static-v2',
     cacheDinamico = 'dynamic-v1',
     cacheInmutable = 'inmutable-v1';
 
