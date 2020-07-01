@@ -5,7 +5,7 @@ const cacheEstatico = 'static-v1',
     cacheInmutable = 'inmutable-v1';
 
 const app_shell = [
-    '/',
+    // '/',
     'index.html',
     'css/animaciones.css',
     'css/medias.css',

@@ -1,7 +1,14 @@
 $(document).ready(function () {
 
+  // path sw
+  const url = window.location.href;
+  const swLocation = '/webPropia/sw.js';
+
     if(navigator.serviceWorker){
-      navigator.serviceWorker.register('/sw.js');
+
+      if(url.includes("localhost")) swLocation = '/sw.js';
+      
+      navigator.serviceWorker.register(swLocation);
     }
 
     new WOW().init();
