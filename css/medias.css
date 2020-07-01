@@ -1,0 +1,311 @@
+@media only screen and (min-width: 1600px){
+    .ir-arriba{
+        padding: 6px;
+        border-radius: 6px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .ir-arriba i{
+        font-size: 62px;
+    }
+    
+}
+
+@media only screen and (max-width: 1199px){
+    .margenArriba-30{
+        margin-top: 30px;
+    }
+
+    .site-main > .services-area .services{
+        width: 13rem !important;
+    }
+
+    .test-popup-link img{
+        width: 95%;
+    }
+
+    .site-main .subscribe-us-area{
+        margin-top: -10px !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe{
+        padding: 4rem 0 !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .btn-submit button{
+        width: 100% !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .col{
+        flex-basis: unset !important;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox{
+        display: flex;
+        flex-grow: 1;
+        position: relative;
+        padding-right: 15px;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input,
+    .site-main .subscribe-us-area .subscribe form .input-textbox .textMessage{
+        width: 100% !important;
+    }
+
+    .header_area .main-menu .navbar .navbar-brand{
+        padding:0  1rem 0 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .margenArriba-50{
+        margin-top: 50px;
+    }
+
+    .site-main .brand-area{
+        padding: 0rem 5rem !important;
+    }
+
+    .site-main .brand-area .first-row .col-lg-4 > .single-brand{
+        width: 75% !important;
+        height: 150px !important;
+    }
+
+    .site-main > .services-area .services{
+        width: 20rem !important;
+        height: 80%;
+    }
+
+    .site-main .subscribe-us-area .subscribe .subscribe-title h4{
+        font-size: 25px !important;
+    }
+
+    .esconder4{
+        display: none;
+    }
+
+    .header_area .main-menu .navbar-nav li{
+        padding: 10px 0px;
+    }
+
+    .site-main svg{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 765px){
+    .site-main > .services-area .services{
+        width: 100% !important;
+        height: 78%;
+    }
+    
+    .contCenter{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .site-main .subscribe-us-area .container .contCenter form{
+        width: 100% !important;
+    }
+    
+    element-item.popular{
+        position: unset !important;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 715px){
+    .copyrights{
+        margin-top: 70px !important;
+    }
+
+    .esconder{
+        display: none;
+    }
+
+    .site-main .about-area{
+        padding: 6rem 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .dark .header_area {
+        width: 103%;
+    }
+
+    .header_area {
+        width: 103%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -315px !important;
+    }
+
+    .pdr{
+        margin-left: -55px;
+        padding-right: 3px !important;
+    }
+
+    .header_area .main-menu .navbar {
+        padding: 24px 1rem !important;
+    }
+
+    .parm{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 486px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -300px !important;
+    }
+
+    .site-main .brand-area .expirience-area .years-area{
+        background: unset !important;
+        padding-left: 20px !important; 
+    }
+
+    .site-main .about-area .about-title h2 > span{
+        font-size: 35px !important;
+    }
+
+    .site-main .brand-area .expirience-area .call-area{
+        padding-left: 0 !important;
+    }
+
+    .site-main .brand-area{
+        padding: 0rem 1rem !important;
+    }
+
+    .site-main .project-area{
+        padding: 0px !important;
+    }
+
+    .test-popup-link img{
+        vertical-align: unset !important;
+    }
+
+    .site-main .subscribe-us-area .container{
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+
+    .site-main .subscribe-us-area .container .row{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .site-main .subscribe-us-area .container .contCenter{
+        margin-left: unset !important;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .contCenter{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -310px !important;
+    }
+
+    .site-main .services-area .services-title h1{
+        font-size: 30px !important;
+    }
+
+    .dark .site-main .project-area .container .project-title h1{
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 434px){
+    .contCenter{
+        margin-left: 10px;
+    }
+
+    .site-main .side-banner .site-title h1{
+        font-size: 2.5rem !important;
+    }
+
+    .site-main .brand-area{
+        padding: 0rem 0rem !important;
+    }
+
+    .site-main .about-area{
+        padding: 6rem 0rem !important;
+    }
+
+    .site-main .services-area{
+        padding: 7rem 0.5rem !important;
+    }
+
+    .site-buttons .d-flex button{
+        width: 100% !important;
+        margin-bottom: 7px;
+    }
+
+    .ctn_btns_galery{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctn_btns_galery button{
+        width: 120px;
+        height: 40px;
+        padding-left: 0 !important;
+        font: unset !important;
+        font-family: var(--roboto);
+    }
+
+    .ctn_btns_galery button:last-child{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: -325px !important;
+    }
+
+    .esconder3{
+        display: none;
+   }
+
+   .site-main .side-banner .site-title h4{
+       font-size: 1.2rem !important;
+   }
+
+   .esconder2{
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 380px){
+    .site-main .brand-area .expirience-area .bg-panel{
+        left: 0 !important;
+        margin-left: 15px !important;
+        width: 90% !important;
+        height: 340px !important;
+    }
+
+    .parm{
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
