@@ -519,6 +519,12 @@ button:focus, button:active, button:hover, .btn:active, .btn.active{
     padding: .7rem 2rem;
 }
 
+.col-sm-12.element-item{
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
 /* ----------------------------------Fin Suscripcion------------------------------ */
 
 /* ----------------------------------Footer----------------------------------*/
