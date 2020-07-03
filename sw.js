@@ -1,3 +1,4 @@
+//fddb3a
 importScripts('js/sw.utils.js');
 
 const cacheEstatico = 'static-v2',

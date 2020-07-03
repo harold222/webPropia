@@ -397,6 +397,7 @@ body{
 /* ----------------------------------portfolio---------------------------------- */
 .site-main .project-area{
     padding: 3rem 0;
+    position: relative;
 }
 
 .site-main .project-area .button-group button{
@@ -445,6 +446,7 @@ button:focus, button:active, button:hover, .btn:active, .btn.active{
 /* ----------------------------------Suscripcion---------------------------------- */
 .site-main .subscribe-us-area{
     margin-top: -70px;
+    position: relative;
 }
 
 .contCenter{
