@@ -191,6 +191,7 @@ $(document).ready(function () {
 
     DarkOrWhite.addEventListener('click', () => {
         document.body.classList.toggle('dark');
+        //$("body").css("background: url('../img/banner/home-banner.svg') no-repeat;")
         DarkOrWhite.classList.toggle('encender');
 
         if($(this).attr("estado") === 0){
