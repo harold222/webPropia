@@ -91,16 +91,13 @@ body{
 
 body{
     background: url('../img/banner/home-banner.svg') no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    overflow-x: hidden;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    overflow-x: hidden !important;
 }
 
 .dark{
     background: url('../img/banner/home-banner-dark.svg') no-repeat !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
-    overflow-x: hidden;
 }
 
 .site-main{
