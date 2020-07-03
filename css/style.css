@@ -397,6 +397,7 @@ body{
 /* ----------------------------------portfolio---------------------------------- */
 .site-main .project-area{
     padding: 3rem 0;
+    display: block;
     position: relative;
 }
 
@@ -446,6 +447,7 @@ button:focus, button:active, button:hover, .btn:active, .btn.active{
 /* ----------------------------------Suscripcion---------------------------------- */
 .site-main .subscribe-us-area{
     margin-top: -70px;
+    display: block;
     position: relative;
 }
 
@@ -616,6 +618,11 @@ button:focus, button:active, button:hover, .btn:active, .btn.active{
 .show .ir-arriba{
     animation: popup .3s ease-in;
     z-index: 100;
+}
+
+
+.site-main .project-area .container .ctn_projects{
+    height: auto !important;
 }
 
 @keyframes popup{
