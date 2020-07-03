@@ -191,7 +191,16 @@ $(document).ready(function () {
 
     DarkOrWhite.addEventListener('click', () => {
         document.body.classList.toggle('dark');
-        //$("body").css("background: url('../img/banner/home-banner.svg') no-repeat;")
+        //$("body").css("background-image", "url('img/banner/home-banner-dark.svg')");
+
+        // $('body').toggle().css({
+        //   "background-image": "url('img/banner/home-banner-dark.svg')",
+        //   "display": "initial"
+        // });
+
+        $("body").toggleClass("dark_theme");
+
+
         DarkOrWhite.classList.toggle('encender');
 
         if($(this).attr("estado") === 0){

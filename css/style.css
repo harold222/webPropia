@@ -83,16 +83,15 @@ body{
 }
 
 body{
-    background: url('../img/banner/home-banner.svg') no-repeat;
+    background: url('../img/banner/home-banner.svg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
 }
 
-.dark{
-    background: url('../img/banner/home-banner-dark.svg') no-repeat !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
+.dark_theme{
+    background: url('../img/banner/home-banner-dark.svg');
 }
 
 .site-main{
