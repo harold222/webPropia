@@ -2,7 +2,7 @@
     "short_name": "Portfolio",
     "name": "Portfolio Soluciones Informaticas",
     "start_url": "index.html",
-    "background_color": "#fddb3a",
+    "background_color": "#fff",
     "display": "standalone",
     "orientation": "portrait",
     "theme_color": "#fddb3a",
