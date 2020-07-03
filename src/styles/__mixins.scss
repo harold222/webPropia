@@ -1,0 +1,40 @@
+
+@mixin telefono{
+    @media only screen and (min-width: #{$telefono}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media only screen and (min-width: #{$tablet}){
+        @content;
+    }
+}
+
+@mixin pc{
+    @media only screen and (min-width: #{$pc}){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media only screen and (min-width: #{desktop}){
+        @content;
+    }
+}
+
+@mixin buttonStyle($width, $background, $color, $height){
+    min-width: $width;
+    height: $height;
+    border: none;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background-color: $background;
+    z-index: 1;
+    align-items: center;
+    border-radius: 2px;
+    padding: 2px 3px;
+
+    color: $color;
+}
