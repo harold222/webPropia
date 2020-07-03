@@ -98,9 +98,9 @@ body{
 
 .dark{
     background: url('../img/banner/home-banner-dark.svg') no-repeat !important;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    overflow-x: hidden !important;
 }
 
 .site-main{

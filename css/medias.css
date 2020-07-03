@@ -131,16 +131,6 @@
     }
 }
 
-@media only screen and (max-width: 575px){
-    .dark .header_area {
-        width: 103%;
-    }
-
-    .header_area {
-        width: 103%;
-    }
-}
-
 @media only screen and (max-width: 550px){
     .site-main .brand-area .expirience-area .bg-panel{
         left: -315px !important;
