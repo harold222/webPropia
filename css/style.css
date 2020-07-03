@@ -91,7 +91,7 @@ body{
 }
 
 .dark_theme{
-    background: url('../img/banner/home-banner-dark.svg');
+    background: url('../img/banner/home-banner-dark.svg') !important;
 }
 
 .site-main{
