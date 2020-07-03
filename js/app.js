@@ -193,13 +193,7 @@ $(document).ready(function () {
         document.body.classList.toggle('dark');
         //$("body").css("background-image", "url('img/banner/home-banner-dark.svg')");
 
-        // $('body').toggle().css({
-        //   "background-image": "url('img/banner/home-banner-dark.svg')",
-        //   "display": "initial"
-        // });
-
         $("body").toggleClass("dark_theme");
-
 
         DarkOrWhite.classList.toggle('encender');
 
