@@ -12,10 +12,6 @@
     z-index: -1;
 }
 
-html, body{
-    width: 100%;
-}
-
 body{
     transition: 0.7s all;
     background-color: #F1F1F1;
@@ -63,14 +59,12 @@ body{
 
 .header_area .main-menu .navbar{
     padding: 26px 8rem;
-    /* height: 90px; */
 }
 
 .header_area .main-menu .nav-item .nav-link{
     font: normal 600 15px/2px var(--roboto);
     font-family: var(--roboto);
     text-transform: uppercase;
-    /* padding: 1.7rem; */
     color: var(--title-color);
 }
 
