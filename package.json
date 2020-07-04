@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "dev": "webpack --config webpack/webpack.config.js -p",
+    "dev": "webpack --config webpack/webpack.config.js",
     "build": "rimraf dist && webpack --config webpack/webpack.config.js -p",
-    "start": "webpack-dev-server --config webpack/webpack.config.js -p"
+    "start": "webpack-dev-server --config webpack/webpack.config.js"
   },
   "author": "Harold Pedraza",
   "license": "ISC",
