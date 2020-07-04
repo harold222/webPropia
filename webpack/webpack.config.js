@@ -3,6 +3,8 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const webpack = require("webpack");
+const copyPlugin = require("copy-webpack-plugin");
+const libreriasExternas = require("../assets");
 
 module.exports = {
     entry: {
@@ -58,7 +60,6 @@ module.exports = {
                         progressive: true,
                         quality: 75
                       },
-                      // optipng.enabled: false will disable optipng
                     optipng: {
                         enabled: true,
                     },
@@ -69,7 +70,6 @@ module.exports = {
                     gifsicle: {
                         interlaced: false,
                     },
-                      // the webp option will enable WEBP
                     webp: {
                         quality: 75
                     }
@@ -99,6 +99,14 @@ module.exports = {
                     autoprefixer()
                 ]
             }
+        }),
+        new copyPlugin({
+            patterns: libreriasExternas.map(library => {
+                return {
+                    from: path.resolve(__dirname, `../node_modules/${library}`),
+                    to: path.resolve('dist/libs')
+                }
+            })
         })
     ]
 };
