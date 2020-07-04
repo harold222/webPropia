@@ -52,17 +52,16 @@
     require("./static/img/subscribe-bg.png");
     
 // Importaciones scss
-require("./styles/animaciones.css");
-require("./styles/footer.scss");
-require("./styles/header.scss");
-require("./styles/main.scss");
-require("./styles/medias.css");
-require("./styles/style.css");
-require("./styles/dark_theme.scss");
-
+require("./static/styles/animaciones.css");
+require("./static/styles/footer.scss");
+require("./static/styles/header.scss");
+require("./static/styles/main.scss");
+require("./static/styles/medias.css");
+require("./static/styles/style.css");
+require("./static/styles/dark_theme.scss");
 
 // Importaciones js
-require("./js/elemento.js");
-require("./js/animacionPalabras.js");
-require("./js/particles.js");
-require("./js/sw.utils.js");
+require("./static/js/elemento.js");
+require("./static/js/animacionPalabras.js");
+require("./static/js/particles.js");
+require("./static/js/sw.utils.js");

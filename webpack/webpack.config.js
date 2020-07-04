@@ -90,6 +90,32 @@ module.exports = {
                 useShortDoctype: true
             }
         }),
+        new htmlWebpackPlugin({
+            filename: 'portfolio.html',
+            hash: true,
+            template: './src/view/portfolio.hbs'
+            ,minify: {
+                collapseWhitespace: false,
+                removeComments: false,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
+        new htmlWebpackPlugin({
+            filename: '404.html',
+            hash: true,
+            template: './src/view/404.hbs'
+            ,minify: {
+                collapseWhitespace: false,
+                removeComments: false,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
         new miniCss({
             filename: '[name].min.css'
         }),
