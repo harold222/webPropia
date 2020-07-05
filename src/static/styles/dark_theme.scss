@@ -208,4 +208,12 @@
 .dark .ctn_projects .file .projects_desc h1,
 .dark .ctn_projects .file .projects_desc p{
     color: whitesmoke;
+
+    &::before{
+        background-color: whitesmoke;
+    }
+} 
+
+.dark .ctn_projects .file .projects_languages .languages .scroll ul li a{
+    color: whitesmoke;
 } 

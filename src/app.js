@@ -24,10 +24,10 @@
     require("./static/img/icons/icon-384x384.png");
     require("./static/img/icons/icon-512x512.png");
     // Importaciones portfolio
-    require("./static/img/portfolio/p1.jpg");
-    require("./static/img/portfolio/p2.jpg");
-    require("./static/img/portfolio/p3.jpg");
-    require("./static/img/portfolio/p4.jpg");
+    require("./static/img/portfolio/p1.png");
+    require("./static/img/portfolio/p2.png");
+    require("./static/img/portfolio/p3.png");
+    require("./static/img/portfolio/p4.png");
     // Importaciones services
     require("./static/img/services/s1.png");
     require("./static/img/services/s2.png");
@@ -60,6 +60,7 @@ require("./static/styles/medias.css");
 require("./static/styles/style.css");
 require("./static/styles/dark_theme.scss");
 require("./static/styles/404.scss");
+require("./static/styles/portfolio.scss");
 
 // Importaciones js
 require("./static/js/elemento.js");

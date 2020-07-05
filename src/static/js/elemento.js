@@ -162,8 +162,13 @@ $(document).ready(function(){
 
   navbarFixed();
 
+  $('.venobox').venobox({   
+    border     : '8px',                             
+    bgcolor    : '#DDDDDD',                   
+    numeratio  : false                              
+  });
   //--------Parte boton ir arriba--------------
-  window.onscroll = function () {
+  window.onscroll = function () { 
       if(document.documentElement.scrollTop > 150){
           document.querySelector('.ir-arriba')
           .classList.add('show');

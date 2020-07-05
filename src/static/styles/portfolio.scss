@@ -1,26 +1,39 @@
+@import 'main';
+@import '_mixins';
+
 .ctn_projects{
     width: 100%;
     .file{
         margin: auto;
         max-width: 1200px;
-        padding: 10px 0px;
-        display: flex;
-        align-content: center;
-        align-items: center;
+        padding: 20px 0px;
 
         .projects_desc {
             text-align: center;
+            width: 100%;
             h1{
                 font-size: 38px;
                 font-weight: bold;
                 letter-spacing: 1px;
                 padding-top: 10px;
+                position: relative;
+                padding-bottom: 10px;
                 @include tablet{
                     font-size: 50px;
                 }
+
+                &::before{
+                    content: '';
+                    width: 130px;
+                    height: 3px;
+                    background-color: black;
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 30%;
+                }
             }
             p{
-                padding: 10px;
+                padding: 20px 10px 10px 10px;
                 font-size: 16px;
                 @include tablet{
                     padding: 50px;
@@ -35,29 +48,150 @@
         .projects_languages{
             display: flex;
             flex-direction: column;
-            flex: 0 1 50%;
-            @include tanlet{
+            width: 100%;
+            padding: 0px 20px;
+            @include pc{
+                padding: 0px 10px;
+            }
+
+            @include tablet{
                 flex-direction: row;
             }    
             
             .projects_img{
+                width: 100%;
+                height: 500px;
+            box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+                position: relative;
+
+                @include tablet{
+                    width: 70%;
+                    height: auto;
+                }
+
+                @include desktop{
+                    padding: 0px;
+                }
+
+                
+                &::before{
+                    transition: .5s ease-in;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(236,209,69);
+                    background: linear-gradient(90deg, rgba(236,209,69,0.70) 0%, rgba(0,0,0,0.70) 100%);
+                    opacity: 0;
+                }
+
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                    }
+
+                    .zoom_icon{
+                        top:50%;  
+                        opacity: 1;
+                    }
+                }
+
+                .zoom_icon{
+                    position: absolute;
+                    top:0%;
+                    left: 45%;
+                    opacity: 0;
+                    transition: .5s linear;
+                    cursor: pointer;
+
+                    @include pc{
+                        left: 50%;
+                    } 
+
+                    i{
+                        color: whitesmoke;
+                        z-index: 2;
+                        position: relative;
+
+                        font-size: 50px;
+                        transition: .5s;
+
+                        &:hover{
+                            color: black;
+                        }
+
+                        @include pc{
+                            font-size: 60px;
+                        }
+
+                        &::after{
+                            position: absolute;
+                            top:-30px;
+                            left: -27px;
+                            content: '';
+                            width: 100px;
+                            height: 100px;
+                            z-index: 1;
+                            border-radius: 50%;
+                            background-color: rgba(175, 175, 175,0.5);
+                            
+                            @include pc{
+                                top:-50px;
+                                left: -45px;
+                                width: 150px;
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+
                 img{
                     width: 100%;
+                    height: 100%;
                 }
             }
 
             .languages{
+                width: 100%;
                 position: relative;
+
+                @include tablet{
+                    width: 30%;
+                }
+
+                @include pc{
+                    margin-top: 0px;
+                }
+
                 .scroll{
-                    position: fixed;
+                    width: 100%;
+                    top: 100px;
+                    display: block;
+                    @include pc{
+                        position: sticky;
+                    }
                     ul{
+                        text-align: center;
+                        padding-top: 25px;
+                        @include tablet{
+                            text-align: left;
+                            padding-top: 0px;
+                            padding-left: 40px;
+                        }
+
                         li{
                             padding: 0;
                             list-style: none;
+                            padding: 10px 0px;
                             a{
                                 text-decoration: none;
                                 color: black;
                                 text-transform: capitalize;
+                                font-weight: 600;
+                                font-size: 19px;
+                                i{
+                                    padding-right: 10px;
+                                }
                             }
                         }
                     }
