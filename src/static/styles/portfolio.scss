@@ -1,0 +1,70 @@
+.ctn_projects{
+    width: 100%;
+    .file{
+        margin: auto;
+        max-width: 1200px;
+        padding: 10px 0px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        .projects_desc {
+            text-align: center;
+            h1{
+                font-size: 38px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding-top: 10px;
+                @include tablet{
+                    font-size: 50px;
+                }
+            }
+            p{
+                padding: 10px;
+                font-size: 16px;
+                @include tablet{
+                    padding: 50px;
+                    font-size: 18px;
+                }
+                @include pc{
+                    padding: 100px;
+                }
+            }
+        }
+
+        .projects_languages{
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 50%;
+            @include tanlet{
+                flex-direction: row;
+            }    
+            
+            .projects_img{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .languages{
+                position: relative;
+                .scroll{
+                    position: fixed;
+                    ul{
+                        li{
+                            padding: 0;
+                            list-style: none;
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+

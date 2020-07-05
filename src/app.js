@@ -59,6 +59,7 @@ require("./static/styles/main.scss");
 require("./static/styles/medias.css");
 require("./static/styles/style.css");
 require("./static/styles/dark_theme.scss");
+require("./static/styles/404.scss");
 
 // Importaciones js
 require("./static/js/elemento.js");
