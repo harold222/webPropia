@@ -4,16 +4,6 @@
     require("./static/img/banner/home-banner.svg");
     require("./static/img/banner/home-banner-dark.svg");
     require("./static/img/banner/pacman.svg");
-    // Importaciones empresas
-    require("./static/img/brands/logo1.png");
-    require("./static/img/brands/logo2.png");
-    require("./static/img/brands/logo3.png");
-    require("./static/img/brands/logo4.png");
-    require("./static/img/brands/logo5.png");
-    require("./static/img/brands/logo6.png");
-    require("./static/img/brands/logo7.png");
-    require("./static/img/brands/logo8.png");
-    require("./static/img/brands/logo9.png");
     // Importaciones icons
     require("./static/img/icons/icon-72x72.png");
     require("./static/img/icons/icon-96x96.png");
@@ -28,6 +18,18 @@
     require("./static/img/portfolio/p2.png");
     require("./static/img/portfolio/p3.png");
     require("./static/img/portfolio/p4.png");
+    require("./static/img/portfolio/p5.png");
+    require("./static/img/portfolio/p6.png");
+    require("./static/img/portfolio/p7.png");
+    require("./static/img/portfolio/p8.png");
+    // Importaciones completas
+    require("./static/img/portfolio/complete/c1.png");
+    require("./static/img/portfolio/complete/c2.png");
+    require("./static/img/portfolio/complete/c3.png");
+    require("./static/img/portfolio/complete/c4.png");
+    require("./static/img/portfolio/complete/c5.png");
+    require("./static/img/portfolio/complete/c6.png");
+    require("./static/img/portfolio/complete/c7.png");
     // Importaciones services
     require("./static/img/services/s1.png");
     require("./static/img/services/s2.png");
