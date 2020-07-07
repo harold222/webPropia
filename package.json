@@ -4,7 +4,8 @@
   "description": "Backend build nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "author": "Harold Pedraza",
   "license": "ISC",
