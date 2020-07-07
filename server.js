@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-=======
 require('./server/config');
->>>>>>> 1c18c48ae9dc04138b2210994a583a28954fba45
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers');
-<<<<<<< HEAD
 
-const port = process.env.PORT || 3000;
-=======
 const bodyParser = require('body-parser'); 
 
 // parse application/x-www-form-urlencoded ,para tipo POST
@@ -17,7 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
  
 // parse application/json
 app.use(bodyParser.json())
->>>>>>> 1c18c48ae9dc04138b2210994a583a28954fba45
 
 app.use(express.static(__dirname + '/public'));
 
@@ -37,8 +30,6 @@ app.get('/portfolio', (req, res) => {
   res.render('portfolio');
 });
 
-<<<<<<< HEAD
-=======
 /* =====================================*/
 /* Servicio api rest */
 /* =====================================*/
@@ -89,16 +80,10 @@ app.delete('/projects', (req, res) => {
 });
 
 
->>>>>>> 1c18c48ae9dc04138b2210994a583a28954fba45
 app.get("*", (req, res) => {
   res.render('404');
 });
 
-<<<<<<< HEAD
-app.listen(port, () => {
-  console.log(`Ready on port ${ port }`);
-=======
 app.listen(process.env.PORT, () => {
   console.log(`Ready on port ${ process.env.PORT }`);
->>>>>>> 1c18c48ae9dc04138b2210994a583a28954fba45
 }); 
