@@ -4,11 +4,19 @@
   "description": "Backend build nodejs",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "node server.js"
+=======
+    "start": "nodemon server"
+>>>>>>> 1c18c48ae9dc04138b2210994a583a28954fba45
   },
   "author": "Harold Pedraza",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "body-parser": "^1.19.0",
+>>>>>>> 1c18c48ae9dc04138b2210994a583a28954fba45
     "express": "^4.17.1",
     "hbs": "^4.1.1"
   }
