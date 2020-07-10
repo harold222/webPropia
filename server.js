@@ -1,14 +1,19 @@
 require('./server/config');
 const express = require('express');
+const mongoose = require('mongoose');
+
 const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers');
 
-const bodyParser = require('body-parser'); 
-
 // parse application/x-www-form-urlencoded ,para tipo POST
+const bodyParser = require('body-parser'); 
 app.use(bodyParser.urlencoded({ extended: false }))
- 
+
+// Importacion de rutas apirest
+app.use(require('./server/routes/user'));
+app.use(require('./server/routes/project'));
+
 // parse application/json
 app.use(bodyParser.json())
 
@@ -20,68 +25,27 @@ app.set('view engine', 'hbs');
 
 app.engine('html', require('hbs').__express);
 
-app.get('/', (req, res) => {
-  res.render('index', {
-    anio: new Date().getFullYear()
-  });
-}); 
-
-app.get('/portfolio', (req, res) => {
-  res.render('portfolio');
-});
-
-/* =====================================*/
-/* Servicio api rest */
-/* =====================================*/
-
-// get = obntengo todos los proyectos
-app.get('/projects', (req, res) => {
-  res.json('hola');
-});
-
-// post= creo nuevos proyectos
-app.post('/projects', (req, res) => {
-  //el body lo trabaja es body-parser, asi obtengo todo lo que venga en el post urlencoded
-  let body = req.body;
-
-  if(body.name === undefined){
-    //status de peticiones http
-    res.status(400).json({
-      ok: false,
-      message: 'name of project is undefined'
-    });
-  }else if(body.desc === undefined){
-    res.status(400).json({
-      ok: false,
-      message: 'description of project is undefined'
-    });
-  }else{
-    res.status(201).json({
-      project: body,
-      estado: 'update'
-    });
-  }
-
-});
-
-// put = actualizo info de el proyecto con id
-app.put('/projects/:id', (req, res) => {
-  //obtengo el id del que viene por url
-  let id = req.params.id;
-  res.json({
-    id,
-    estado: 'ok'
+app.get("/", (req, res) => {
+  res.render("index", {
+    anio: new Date().getFullYear(),
   });
 });
 
-// delete = desctivo el proyecto
-app.delete('/projects', (req, res) => {
-  res.json('delete');
+app.get("/portfolio", (req, res) => {
+  res.render("portfolio");
 });
-
 
 app.get("*", (req, res) => {
-  res.render('404');
+  res.render("404");
+});
+
+mongoose.connect(process.env.URLDB,
+  {useNewUrlParser:true, useCreateIndex:true, useUnifiedTopology: true}, (err, res) => {
+
+  if(err) throw err;
+
+  console.log('Connect database');
+
 });
 
 app.listen(process.env.PORT, () => {
