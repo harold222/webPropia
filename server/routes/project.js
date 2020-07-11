@@ -40,18 +40,14 @@ app.get("/project", (req, res) => {
       });
     }
 
-    let user = JSON.parse(userWeb);
-    // user = user.dateDevelopment;
+    // res.json({
+    //   userWeb
+    // })
 
-    res.json({
-      user
-    })
-
-    //.dateDevelopment.toISOString().substring(0,10);
-    // res.render('portfolio', {
-    //   userWeb,
-    //   fecha
-    // });
+    // .dateDevelopment.toISOString().substring(0,10);
+    res.render('portfolio', {
+      userWeb
+    });
   })
 });
 
