@@ -27,13 +27,19 @@ app.get("/projects", (req, res) => {
         }
       ];
 
-      res.render("index", {
-        conteo,
+
+      res.json({
+        ok: true,
         data
-        // nombre: userWeb.nombreProject,
-        // img: userWeb.imgMain,
-        // url: userWeb.url
-      });
+      })
+
+      // res.render("index", {
+      //   conteo,
+      //   data
+      //   // nombre: userWeb.nombreProject,
+      //   // img: userWeb.imgMain,
+      //   // url: userWeb.url
+      // });
     });
 
 
