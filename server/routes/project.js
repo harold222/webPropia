@@ -40,11 +40,11 @@ app.get("/project", (req, res) => {
       });
     }
 
-    let fecha = userWeb.dateDevelopment.toISOString().substring(0,10);
+    // let fecha = userWeb.dateDevelopment.toISOString().substring(0,10);
 
     res.render('portfolio', {
       userWeb,
-      fecha
+      fecha: 'as'
     });
   })
 });
