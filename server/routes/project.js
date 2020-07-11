@@ -40,8 +40,8 @@ app.get("/project", (req, res) => {
       });
     }
 
-    let user = JSON.stringify(userWeb);
-    user = user.dateDevelopment;
+    let user = JSON.parse(userWeb);
+    // user = user.dateDevelopment;
 
     res.json({
       user
