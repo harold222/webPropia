@@ -17,24 +17,13 @@ app.get("/projects", (req, res) => {
         });
     }
 
-    let data = [
-      {
+      res.render("index", {
+        conteo,
         userWeb
-      }
-    ];
-
-    res.json({
-      ok: true,
-      data
-    })
-
-      // res.render("index", {
-      //   conteo,
-      //   data
-      //   // nombre: userWeb.nombreProject,
-      //   // img: userWeb.imgMain,
-      //   // url: userWeb.url
-      // });
+        // nombre: userWeb.nombreProject,
+        // img: userWeb.imgMain,
+        // url: userWeb.url
+      });
   })
 });
 
