@@ -17,21 +17,18 @@ app.get("/projects", (req, res) => {
         });
     }
 
-    ProyectoSchema.count({"estado": true}, (err, conteo) => {
+    let data = [
+      {
+        nombre: userWeb.nombreProject,
+        img: userWeb.imgMain,
+        url: userWeb.url
+      }
+    ];
 
-      let data = [
-        {
-          nombre: userWeb.nombreProject,
-          img: userWeb.imgMain,
-          url: userWeb.url
-        }
-      ];
-
-
-      res.json({
-        ok: true,
-        data
-      })
+    res.json({
+      ok: true,
+      data
+    })
 
       // res.render("index", {
       //   conteo,
@@ -40,10 +37,6 @@ app.get("/projects", (req, res) => {
       //   // img: userWeb.imgMain,
       //   // url: userWeb.url
       // });
-    });
-
-
-
   })
 });
 
