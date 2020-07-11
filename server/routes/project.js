@@ -40,12 +40,12 @@ app.get("/project", (req, res) => {
       });
     }
 
-    let fecha = JSON.parse(userWeb).dateDevelopment;
+    let fecha = JSON.parse(userWeb);
     res.json({
       fecha
     })
 
-    // .toISOString().substring(0,10);
+    //.dateDevelopment.toISOString().substring(0,10);
     // res.render('portfolio', {
     //   userWeb,
     //   fecha
