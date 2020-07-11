@@ -19,9 +19,7 @@ app.get("/projects", (req, res) => {
 
     let data = [
       {
-        nombre: userWeb.nombreProject,
-        img: userWeb.imgMain,
-        url: userWeb.url
+        userWeb
       }
     ];
 
