@@ -25,11 +25,11 @@ app.set('view engine', 'hbs');
 
 app.engine('html', require('hbs').__express);
 
-app.get("/", (req, res) => {
-  res.render("index", {
-    anio: new Date().getFullYear(),
-  });
-});
+// app.get("/", (req, res) => {
+//   res.render("index", {
+    
+//   });
+// });
 
 app.get("*", (req, res) => {
   res.render("404");

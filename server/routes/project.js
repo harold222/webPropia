@@ -7,7 +7,7 @@ const _ = require('underscore');
 const ProyectoSchema = require("../models/projects");
 
 // get = obntengo todos los proyectos
-app.get("/projects", (req, res) => {
+app.get("/", (req, res) => {
   //obtengo todos los registros guardados, si su estado es verdadero
   ProyectoSchema.find({"estado": true}, 'nombreProject imgMain url filtrado').exec((err, userWeb) => {
     if(err){
@@ -18,7 +18,8 @@ app.get("/projects", (req, res) => {
     }
 
     res.render("index", {
-      userWeb
+      userWeb,
+      anio: 2020
     });
   })
 });
