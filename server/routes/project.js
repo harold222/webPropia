@@ -30,7 +30,7 @@ app.get("/project", (req, res) => {
   //obtengo un proyecto por su id
   let url = req.query.url;
  
-  ProyectoSchema.find({"url": url, "estado": true}, 'nombreProject descProject technologies icons dateDevelopment imgComplete link url').exec((err, userWeb) => {
+  ProyectoSchema.find({"url": url, "estado": true}, 'nombreProject descProject technologies icons dateDevelopment imgComplete link').exec((err, userWeb) => {
     if(err){
       return res.status(400).json({
           ok: false,
@@ -40,10 +40,14 @@ app.get("/project", (req, res) => {
       });
     }
 
-    res.json({
-        ok: true,
-        userWeb
-    })
+    // res.json({
+    //     ok: true,
+    //     userWeb
+    // })
+
+    res.render('portfolio', {
+      userWeb
+    });
   })
 });
 

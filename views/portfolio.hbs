@@ -5,17 +5,19 @@
 <div class="ctn_projects">
     <div class="file">
         <div class="projects_desc">
-            <h1>Mi proyecto</h1>
+            <h1>{{userWeb.nombreProject}}</h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat earum culpa quam, exercitationem maxime quibusdam iusto aut dicta unde debitis sit mollitia, nulla itaque quis est totam, praesentium modi perspiciatis!
+                {{userWeb.descProject}}
+                Fue Creado el: {{userWeb.dateDevelopment}}
             </p>
+            <a href="{{userWeb.link}}">Ver El Proyecto...</a>
         </div>
 
         <div class="projects_languages">
             <div class="projects_img">
-                    <img src="recursos/img/c3.png" alt="My project">
+                    <img src="{{userWeb.imgComplete}}" alt="My project">
                 <div class="zoom_icon">
-                    <a class="venobox" data-gall="images" href="recursos/img/p4.png">
+                    <a class="venobox" data-gall="images" href="{{userWeb.imgComplete}}">
                         <i class="fas fa-search-plus fa-4x"></i>
                     </a>
                 </div>
@@ -23,24 +25,13 @@
             <div class="languages">
                 <div class="scroll">
                     <ul>
-                        <li>
-                            <a href="#"><i class="fab fa-html5 fa-2x"></i> Html</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-css3-alt fa-2x"></i> Css</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-js fa-2x"></i> Javascript</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-bootstrap fa-2x"></i> Bootstrap</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-code fa-2x"></i> Bootstrap</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="far fa-file-code fa-2x"></i> Bootstrap</a>
-                        </li>
+                        {{#each userWeb}}
+                            <li>
+                                <a href="#">
+                                    <i class="{{this.technologies}} fa-2x"></i> {{this.icons}}
+                                </a>
+                            </li>
+                        {{/each}}
                     </ul>
                 </div>
             </div>
