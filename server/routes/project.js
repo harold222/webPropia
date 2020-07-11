@@ -17,11 +17,18 @@ app.get("/projects", (req, res) => {
         });
     }
 
-    res.json({
-        ok: true,
-        userWeb
-    })
-})
+    ProyectoSchema.count({"estado": true}, (err, conteo) => {
+      res.render("index", {
+        conteo,
+        nombre: userWeb.nombreProject,
+        img: userWeb.imgMain,
+        url: userWeb.url
+      });
+    });
+
+
+
+  })
 });
 
 // get = obntengo un proyecto por su link o puede ser por id
