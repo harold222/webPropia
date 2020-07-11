@@ -41,6 +41,7 @@ app.get("/project", (req, res) => {
     }
 
     let user = JSON.stringify(userWeb);
+    user = user.dateDevelopment;
 
     res.json({
       user
