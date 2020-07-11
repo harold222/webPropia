@@ -40,7 +40,7 @@ app.get("/project", (req, res) => {
       });
     }
 
-    let fecha = JSON.parse(userWeb);
+    let fecha = userWeb;
     res.json({
       fecha
     })
