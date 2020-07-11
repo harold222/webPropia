@@ -34,18 +34,22 @@ app.get("/project", (req, res) => {
     if(err){
       return res.status(400).json({
           ok: false,
-          message: 'Se necesita enviar el id del proyecto',
+          message: 'Se necesita enviar la url del proyecto',
           url,
           err
       });
     }
 
-    // let fecha = userWeb.dateDevelopment.toISOString().substring(0,10);
+    let fecha = JSON.parse(userWeb).dateDevelopment;
+    res.json({
+      fecha
+    })
 
-    res.render('portfolio', {
-      userWeb,
-      fecha: 'as'
-    });
+    // .toISOString().substring(0,10);
+    // res.render('portfolio', {
+    //   userWeb,
+    //   fecha
+    // });
   })
 });
 
