@@ -18,11 +18,21 @@ app.get("/projects", (req, res) => {
     }
 
     ProyectoSchema.count({"estado": true}, (err, conteo) => {
+
+      let data = [
+        {
+          nombre: userWeb.nombreProject,
+          img: userWeb.imgMain,
+          url: userWeb.url
+        }
+      ];
+
       res.render("index", {
         conteo,
-        nombre: userWeb.nombreProject,
-        img: userWeb.imgMain,
-        url: userWeb.url
+        data
+        // nombre: userWeb.nombreProject,
+        // img: userWeb.imgMain,
+        // url: userWeb.url
       });
     });
 
