@@ -46,6 +46,9 @@ let projectSchema = new Schema({
         unique: true,
         required: [true, 'El link es requerido']
     },
+    filtrado:{
+        type: String
+    },
     date: { 
         created: {
             type: Date, 

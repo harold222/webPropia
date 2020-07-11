@@ -189,7 +189,7 @@
         <div class="row grid ctn_projects">
 
             {{#each userWeb}}
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular mt-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item {{filtrado}} mt-3">
                     <div class="our-project">
                         <div class="img">
                             <a href="?url=">
@@ -199,7 +199,7 @@
                         <div class="title py-4">
                             <h4 class="text-uppercase"><a href="?url={{url}}" class="linksO" title="Ver mas">{{nombreProject}}</a>
                             </h4>
-                            <span class="text-secondary">Ultimos, portfolio</span>
+                            <span class="text-secondary">{{filtrado}}, portfolio</span>
                         </div>
                     </div>
                 </div>
