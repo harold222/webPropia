@@ -4,20 +4,21 @@
     <main class="site-main">
 <div class="ctn_projects">
     <div class="file">
+        {{#each userWeb}}
         <div class="projects_desc">
-            <h1>{{userWeb.nombreProject}}</h1>
+            <h1>{{nombreProject}}</h1>
             <p>
-                {{userWeb.descProject}}
-                Fue Creado el: {{userWeb.dateDevelopment}}
+                {{descProject}}
+                Fue Creado el: {{dateDevelopment}}
             </p>
-            <a href="{{userWeb.link}}">Ver El Proyecto...</a>
+            <a href="{{link}}">Ver El Proyecto...</a>
         </div>
 
         <div class="projects_languages">
             <div class="projects_img">
-                    <img src="{{userWeb.imgComplete}}" alt="My project">
+                    <img src="{{imgComplete}}" alt="My project">
                 <div class="zoom_icon">
-                    <a class="venobox" data-gall="images" href="{{userWeb.imgComplete}}">
+                    <a class="venobox" data-gall="images" href="{{imgComplete}}">
                         <i class="fas fa-search-plus fa-4x"></i>
                     </a>
                 </div>
@@ -25,18 +26,16 @@
             <div class="languages">
                 <div class="scroll">
                     <ul>
-                        {{#each userWeb}}
-                            <li>
-                                <a href="#">
-                                    <i class="{{this.technologies}} fa-2x"></i> {{this.icons}}
-                                </a>
-                            </li>
-                        {{/each}}
+                        <li>
+                            <a href="#">
+                                <i class="{{this.technologies}} fa-2x"></i> {{this.icons}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        
+        {{/each}}
     </div>
 </div>
 {{> footer}}
