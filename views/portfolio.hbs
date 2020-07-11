@@ -9,9 +9,9 @@
             <h1>{{nombreProject}}</h1>
             <p>
                 {{descProject}}
-                Fue Creado el: {{dateDevelopment}}
+                Fue Creado el: {{dateDevelopment.toISOString().substring(0,10)}}
                 <br>
-                <a class="viewProject" href="{{link}}">Ver El Proyecto...</a>
+                <a class="viewProject" target="_blank" href="{{link}}">Ver El Proyecto...</a>
             </p>
         </div>
 

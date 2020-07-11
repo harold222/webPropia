@@ -39,12 +39,7 @@ app.get("/project", (req, res) => {
           err
       });
     }
-
-    // res.json({
-    //     ok: true,
-    //     userWeb
-    // })
-
+    
     res.render('portfolio', {
       userWeb
     });
