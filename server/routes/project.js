@@ -40,10 +40,8 @@ app.get("/project", (req, res) => {
       });
     }
 
-    let fecha = userWeb.nombreProject;
-    
     res.json({
-      fecha
+      fecha = userWeb.nombreProject
     })
 
     //.dateDevelopment.toISOString().substring(0,10);
