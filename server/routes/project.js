@@ -18,7 +18,6 @@ app.get("/projects", (req, res) => {
     }
 
     res.render("index", {
-      conteo,
       userWeb
     });
   })
