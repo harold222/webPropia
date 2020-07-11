@@ -17,13 +17,10 @@ app.get("/projects", (req, res) => {
         });
     }
 
-      res.render("index", {
-        conteo,
-        userWeb
-        // nombre: userWeb.nombreProject,
-        // img: userWeb.imgMain,
-        // url: userWeb.url
-      });
+    res.render("index", {
+      conteo,
+      userWeb
+    });
   })
 });
 
