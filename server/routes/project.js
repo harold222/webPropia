@@ -28,14 +28,14 @@ app.get("/projects", (req, res) => {
 app.get("/project", (req, res) => {
 
   //obtengo un proyecto por su id
-  let id = req.query.url;
+  let url = req.query.url;
  
-  ProyectoSchema.find({"url": id, "estado": true}, 'nombreProject descProject technologies icons dateDevelopment imgComplete link url').exec((err, userWeb) => {
+  ProyectoSchema.find({"url": url, "estado": true}, 'nombreProject descProject technologies icons dateDevelopment imgComplete link url').exec((err, userWeb) => {
     if(err){
       return res.status(400).json({
           ok: false,
           message: 'Se necesita enviar el id del proyecto',
-          id,
+          url,
           err
       });
     }
