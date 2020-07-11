@@ -7,7 +7,6 @@ let Schema = mongoose.Schema;
 let projectSchema = new Schema({
     nombreProject:{
         type: String,
-        unique: true,
         required: [true, 'El nombre es requerido']
     },
     descProject:{
@@ -37,6 +36,15 @@ let projectSchema = new Schema({
     estado:{
         type: Boolean,
         default: true
+    },
+    link:{
+        type: String,
+        default: '#'
+    },
+    url:{
+        type: String,
+        unique: true,
+        required: [true, 'El link es requerido']
     },
     date: { 
         created: {

@@ -9,7 +9,7 @@ const ProyectoSchema = require("../models/projects");
 // get = obntengo todos los proyectos
 app.get("/projects", (req, res) => {
   //obtengo todos los registros guardados, si su estado es verdadero
-  ProyectoSchema.find({"estado": true}, 'nombreProject imgMain').exec((err, userWeb) => {
+  ProyectoSchema.find({"estado": true}, 'nombreProject imgMain url').exec((err, userWeb) => {
     if(err){
         return res.status(400).json({
             ok: false,
@@ -24,13 +24,13 @@ app.get("/projects", (req, res) => {
 })
 });
 
-// get = obntengo un proyecto por id
+// get = obntengo un proyecto por su link o puede ser por id
 app.get("/project", (req, res) => {
 
   //obtengo un proyecto por su id
-  let id = req.query.id;
+  let id = req.query.url;
 
-  ProyectoSchema.find({"_id": id, "estado": true}, 'nombreProject descProject technologies icons dateDevelopment imgComplete').exec((err, userWeb) => {
+  ProyectoSchema.find({"url": id, "estado": true}, 'nombreProject descProject technologies icons dateDevelopment imgComplete link url').exec((err, userWeb) => {
     if(err){
       return res.status(400).json({
           ok: false,
@@ -59,7 +59,9 @@ app.post("/projects", (req, res) => {
     icons: body.icon,
     dateDevelopment: body.date,
     imgMain: body.imgMain,
-    imgComplete: body.imgComp
+    imgComplete: body.imgComp,
+    link: body.linkDev,
+    url: body.url
   });
 
   //por defecto
@@ -90,7 +92,9 @@ app.put("/projects/:id", (req, res) => {
     'dateDevelopment',
     'imgMain',
     'imgComplete',
-    'estado'
+    'estado',
+    'link',
+    'url'
     ]
   );
 
