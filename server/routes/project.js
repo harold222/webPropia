@@ -40,8 +40,10 @@ app.get("/project", (req, res) => {
       });
     }
 
+    let user = JSON.stringify(userWeb);
+
     res.json({
-      user: userWeb
+      user
     })
 
     //.dateDevelopment.toISOString().substring(0,10);
